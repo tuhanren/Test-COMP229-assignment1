@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "ES6", //cuz nodejs does not support the newest version of JS, so chose a early one
+        "module": "CommonJS", //very important
+        "sourceMap": true,
+        "noImplicitAny": true, //tell error implicitly
+        "alwaysStrict": true, // not allow the type "any"
+        "moduleResolution": "Node", //most important
+        "esModuleInterop": true,
+        "pretty": true //enable code coloring
+    },
+    "exclude": [
+        "node_modules" //not compile other stuff
+    ]
+}
