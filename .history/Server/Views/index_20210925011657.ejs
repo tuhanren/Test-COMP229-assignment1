@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <!-- CSS Section -->
+  <link rel='stylesheet' href='/Content/app.css' />
+  <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="icon" href="./Assets/images/tabIcon.svg">
+</head>
+
+<body>
+  <!-- Main Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><img class="navbar-brand" src="./Assets/images/logo2.gif"></a>
+      <!-- hambuger button-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <% if (title == 'Home') { %>
+            <a class="nav-link active" href="/home">
+              <% } else { %>
+              <a class="nav-link" href="/home">
+                <% } %>
+                <i class="fas fa-home fa-lg"></i> Home</a>
+          </li>
+
+          <li class="nav-item">
+            <% if (title == 'About') { %>
+            <a class="nav-link active" href="/about">
+              <% } else { %>
+              <a class="nav-link" href="/about">
+                <% } %>
+                <i class="fas fa-info-circle fa-lg"></i> About</a>
+          </li>
+
+          <li class="nav-item">
+            <% if (title == 'Projects') { %>
+            <a class="nav-link active" href="/projects">
+              <% } else { %>
+              <a class="nav-link" href="/projects">
+                <% } %>
+                <i class="fas fa-project-diagram fa-lg"></i> Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <% if (title == 'Services') { %>
+            <a class="nav-link active" href="/services">
+              <% } else { %>
+              <a class="nav-link" href="/services">
+                <% } %>
+                <i class="fas fa-concierge-bell fa-lg"></i> Services</a>
+          </li>
+
+          <li class="nav-item">
+            <% if (title == 'Contact') { %>
+            <a class="nav-link active" href="/contact">
+              <% } else { %>
+              <a class="nav-link" href="/contact">
+                <% } %>
+                <i class="fas fa-id-card fa-lg"></i> Contact</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/tuhanren"><i class="fab fa-github-square fa-lg"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/hanrentu"><i class="fab fa-linkedin fa-lg"></i></a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- Content Section -->
+  <div class="container">
+    <h1>Welcome to the <strong><%= title %></strong> page</h1>
+    <section class="section h-100vh bg-dark" id="home"><div class="mbYTP_wrapper" id="wrapper_mbYTP_video" style="position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 1; transition-property: opacity; transition-duration: 2000ms;"><iframe id="mbYTP_video" class="playerBox" style="position: absolute; z-index: 0; width: 1822px; height: 1301.56px; top: 0px; left: 0px; overflow: hidden; opacity: 1; margin-top: -166.28px; margin-left: -457.5px;" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/B02Q3cg2wtY?autoplay=0&amp;modestbranding=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=mbYTP_video&amp;origin=https%3A%2F%2Fbillbai0102.github.io&amp;allowfullscreen=true&amp;wmode=transparent&amp;iv_load_policy=3&amp;html5=1&amp;widgetid=1"></iframe><div class="YTPOverlay" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></div></div>
+            <div class="bg-overlay"></div>
+            <a id="video" class="youtube-bg mb_YTPlayer isMuted" data-property="{videoURL:'https://www.youtube.com/watch?v=B02Q3cg2wtY',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}" style="display: none; position: relative; background-image: none;"></a>
+            <!-- <video autoplay muted loop id="myVideo" class="videoBackground">
+                <source src="VidBackground.mp4" type="video/mp4">
+            </video> -->
+            <div class="home-table" style="position: relative;">
+                <div class="home-table-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="text-white text-center" id="social-link">
+                                    <h4>Welcome.</h4>
+                                    <h1 class="header_title mb-0 mt-3">I Am <span class="element font-weight-bold" data-elements="Bill Bai.,a Software Developer.,a Game Developer.,a Student.">a Game Developer.</span><span class="typed-cursor">|</span></h1>
+                                    <ul class="social_home list-unstyled text-center pt-4">
+                                        <li class="list-inline-item" id="devpost-logo"><a href="https://devpost.com/billbai"><img src="images/devpost.svg" width="16px" height="16px"></a></li>
+                                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/bill-bai-9380a3175/"><i class="mdi mdi-linkedin"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://github.com/billbai0102"><i class="mdi mdi-github-circle"></i></a></li>
+                                        <li class="list-inline-item"><a href="#contact"><i class="mdi mdi-email"></i></a></li>
+                                    </ul>
+                                    <div class="header_btn">
+                                        <a href="https://docs.google.com/document/d/13xrflCkuPjrW8BWxquTRipX2A4lDBRPBZfsU2h-NzLM/edit?usp=sharing" class="btn btn-outline-custom btn-rounded mt-4">Download Resumé</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll_down">
+                <a href="#about" class="scroll">
+                    <i class="mbri-arrow-down text-white"></i>
+                </a>
+            </div>
+        <canvas class="particles-js-canvas-el" width="907" height="969" style="width: 100%; height: 100%; position: absolute; top: 0px;"></canvas></section>
+  </div>
+  <footer>
+    <nav class="navbar fixed-bottom navbar-dark bg-dark">
+      <small class="container-fluid navbar-text me-auto mb-0 mb-lg-0"><b>©Copyright 2021 All Rights Reserved</b></small>
+    </nav>
+  </footer>
+  <!-- JavaScript Section -->
+  <script src='/Scripts/app.js'>
+  <script script script src = "./jquery/dist/jquery.min.js" ></script>
+  <script src="./@fortawesome/fontawesome-free/js/all.min.js"></script>
+</body>
+
+</html>
