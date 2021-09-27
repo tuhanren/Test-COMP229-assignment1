@@ -15,7 +15,7 @@ router.get('/home', function(req, res, next) {
 
 /* GET about page. */
 router.get('/about', function(req, res, next) {
-  let resumePath = './Public/Assets/docs/Hanren-Resume 2022 v2-SE.pdf';
+  let resumePath = 'Public/Assets/docs/resume.pdf';
   fs.readFile(resumePath, function (err, data) {
     res.contentType('application/pdf');
     res.send(data);
