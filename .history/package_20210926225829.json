@@ -1,0 +1,48 @@
+{
+  "name": "hanren_profile",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "engines": {
+    "node": "^14.17.6",
+    "npm": "^7.0.0",
+    "yarn": "^1.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jquery": "^3.6.0",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.13",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.1.6",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/debug": "^4.1.7",
+    "@types/ejs": "^3.1.0",
+    "@types/express": "^4.17.13",
+    "@types/http-errors": "^1.8.1",
+    "@types/jquery": "^3.5.6",
+    "@types/morgan": "^1.9.3"
+  },
+  "description": "comp229 assignment1",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuhanren/Test-COMP229-assignment1.git"
+  },
+  "author": "Hanren Tu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuhanren/Test-COMP229-assignment1/issues"
+  },
+  "homepage": "https://github.com/tuhanren/Test-COMP229-assignment1#readme"
+}
