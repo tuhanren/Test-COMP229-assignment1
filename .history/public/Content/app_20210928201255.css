@@ -1,0 +1,10 @@
+/* your custom css goes here */
+.navbar-brand {
+    width: 100px;
+}
+
+#particles-js{
+    background-color: #242529;
+    background-size: cover;
+    height: 680px
+}
