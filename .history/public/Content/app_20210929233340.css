@@ -6,6 +6,6 @@
 #particles-js{
     background-image: url("../Assets/images/test.jpg");
     background-size: cover;
-    
+    height: 680px;
     opacity: 0.8;
 }
